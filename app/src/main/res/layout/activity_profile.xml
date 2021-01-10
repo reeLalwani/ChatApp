@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/colorAccent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/img"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView android:id="@+id/tv_profile_dpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Display Name"
+        android:gravity="center"
+        android:textSize="20sp"/>
+    <TextView android:id="@+id/tv_profile_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Hey lets chat"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <Button android:id="@+id/btn_change_pimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Image"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="120dp"/>
+
+    <Button  android:id="@+id/btn_change_pstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp"
+        android:text="Change Status"
+        android:layout_marginLeft="120dp"/>
+
+</RelativeLayout>
